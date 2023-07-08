@@ -68,7 +68,9 @@ public class MovieController {
 	public String putMovie(@RequestBody Movie m) {
 		PropertyConfigurator.configure("logproperties");
 		log.info(ms.putMovie(m));
+		System.out.println();
 		return ms.putMovie(m);
+		
 	}
 	
 }
